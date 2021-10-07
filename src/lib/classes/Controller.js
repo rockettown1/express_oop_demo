@@ -26,7 +26,7 @@ export default class _Controller {
         default:
           throw new CustomError(
             "Http verb is missing or not spelled correctly. Check your controller.",
-            Errors.Http_error
+            Errors.ctr_error
           );
       }
     }

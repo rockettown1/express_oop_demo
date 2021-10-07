@@ -1,5 +1,6 @@
 export const Errors = {
   Http_error: "HTTP Error",
+  ctr_error: "Controller Error",
   Database: "Database Error",
   Server: "Server Error",
 };

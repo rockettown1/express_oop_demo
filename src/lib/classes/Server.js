@@ -1,4 +1,5 @@
 import { logs } from "../constants/logging.js";
+import { errorHandler } from "./ErrorHandler.js";
 
 export default class Server {
   #app;
@@ -26,8 +27,8 @@ export default class Server {
       });
       console.log(logs.ctr_success);
     } catch (error) {
-      console.log(logs.ctr_fail, error);
-      //if the controllers aren't loading then the app should stop
+      console.log(logs.ctr_fail);
+      errorHandler.handleFatal(error);
     }
   }
 

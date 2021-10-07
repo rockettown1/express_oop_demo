@@ -72,7 +72,7 @@ class Logger {
     this.logger.error(msg, meta);
   }
 
-  fatal(msg, meta) {
+  async fatal(msg, meta) {
     this.logger.log("fatal", msg, meta);
   }
 }
