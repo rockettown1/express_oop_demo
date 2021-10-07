@@ -17,7 +17,7 @@ export default class _Controller {
         case "POST":
           this.router.post(route.path, route.handler);
           break;
-        case "PUT":
+        case "PATCH":
           this.router.put(route.path, route.handler);
           break;
         case "DELETE":
