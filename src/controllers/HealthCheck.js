@@ -1,4 +1,4 @@
-import _Controller from "../lib/classes/Controller.js";
+import _Controller from "../lib/Controller.js";
 import CustomError from "../lib/CustomError.js";
 import { HttpStatusCode, Errors } from "../lib/constants/error_list.js";
 

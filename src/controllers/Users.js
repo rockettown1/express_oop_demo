@@ -1,4 +1,4 @@
-import _Controller from "../lib/classes/Controller.js";
+import _Controller from "../lib/Controller.js";
 
 export default class UserController extends _Controller {
   path = "/api";

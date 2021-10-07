@@ -1,6 +1,6 @@
 import { Router } from "express";
 import CustomError from "./CustomError.js";
-import { Errors } from "../constants/error_list.js";
+import { Errors } from "./constants/error_list.js";
 
 //do not instantiate (would be abstract in Typescript)
 export default class _Controller {
