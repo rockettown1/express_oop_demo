@@ -26,6 +26,6 @@ export default class UserController extends _Controller {
   }
 
   async addUser(req, res) {
-    res.status(200).send({ message: "You successfully added a user" });
+    res.status(201).send({ message: "You successfully added a user" });
   }
 }

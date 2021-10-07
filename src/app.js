@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import "dotenv/config";
-import Server from "./lib/classes/Server.js";
+import Server from "./lib/Server.js";
 import { customErrorHandler } from "./middleware/errorHandler.js";
 import {
   HealthCheckController,

@@ -1,5 +1,5 @@
 import _Controller from "../lib/classes/Controller.js";
-import CustomError from "../lib/classes/CustomError.js";
+import CustomError from "../lib/CustomError.js";
 import { HttpStatusCode, Errors } from "../lib/constants/error_list.js";
 
 export default class HealthCheckController extends _Controller {

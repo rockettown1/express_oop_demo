@@ -1,4 +1,4 @@
-import { logs } from "../constants/logging.js";
+import { logs } from "./constants/logging.js";
 import { errorHandler } from "./ErrorHandler.js";
 
 export default class Server {
