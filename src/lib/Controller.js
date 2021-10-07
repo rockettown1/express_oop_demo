@@ -10,6 +10,9 @@ export default class _Controller {
 
   setRoutes() {
     for (const route of this.routes) {
+      for (const mw of route.localMiddleware) {
+        this.router.use(route.path, mw);
+      }
       switch (route.method) {
         case "GET":
           this.router.get(route.path, route.handler);

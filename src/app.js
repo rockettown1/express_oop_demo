@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import "dotenv/config";
 import Server from "./lib/Server.js";
-import { customErrorHandler } from "./middleware/errorHandler.js";
+import { customErrorHandler } from "./middleware/index.js";
 import { HealthCheckController, UsersController } from "./controllers/index.js";
 
 const server = new Server(express(), process.env.PORT);

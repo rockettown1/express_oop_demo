@@ -1,6 +1,7 @@
 import _Controller from "../lib/Controller.js";
 import CustomError from "../lib/CustomError.js";
 import { HttpStatusCode, Errors } from "../lib/constants/error_list.js";
+import { authHandler } from "../middleware/index.js";
 
 export default class HealthCheckController extends _Controller {
   path = "/api";
@@ -9,7 +10,7 @@ export default class HealthCheckController extends _Controller {
       path: "/health",
       method: "GET",
       handler: this.check_api,
-      localMiddleware: [],
+      localMiddleware: [authHandler],
     },
   ];
 
