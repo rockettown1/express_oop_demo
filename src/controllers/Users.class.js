@@ -1,6 +1,6 @@
 import _Controller from "../lib/controller.class.js";
 
-export default class User extends _Controller {
+export default class UserController extends _Controller {
   path = "/api";
   routes = [
     {

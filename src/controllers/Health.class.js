@@ -1,7 +1,7 @@
 import _Controller from "../lib/controller.class.js";
 
-export default class HealthCheck extends _Controller {
-  path = "";
+export default class HealthController extends _Controller {
+  path = "/api";
   routes = [
     {
       path: "/health",
