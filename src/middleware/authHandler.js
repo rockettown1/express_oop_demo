@@ -1,5 +1,5 @@
 const authHandler = (req, res, next) => {
-  console.log("Handling auth");
+  //   console.log("Handling auth");
   next();
 };
 
