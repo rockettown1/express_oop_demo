@@ -8,6 +8,5 @@ export const logs = {
   listening: (port) =>
     chalk.bgBlue.black(` - Server is listening on port ${port} `),
   db_success: (dbName) => chalk.bgCyan.black(` - Connected to ${dbName} `),
-  db_fail: (dbName) =>
-    chalk.bgGreen.black(` - Unable to connect to ${dbName} `),
+  db_fail: (dbName) => chalk.bgRed.black(` - Unable to connect to ${dbName} `),
 };

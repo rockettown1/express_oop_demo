@@ -2,6 +2,7 @@ import _Controller from "../lib/Controller.js";
 import CustomError from "../lib/CustomError.js";
 import { HttpStatusCode, Errors } from "../lib/constants/error_list.js";
 import { authHandler } from "../middleware/index.js";
+import { lowdbService } from "../services/LowdbService.js";
 
 export default class HealthCheckController extends _Controller {
   path = "/api";

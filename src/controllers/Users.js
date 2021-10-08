@@ -1,5 +1,6 @@
 import _Controller from "../lib/Controller.js";
 import { authHandler } from "../middleware/index.js";
+import { lowdbService } from "../services/LowdbService.js";
 
 export default class UserController extends _Controller {
   path = "/api";
