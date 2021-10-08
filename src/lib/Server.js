@@ -32,6 +32,16 @@ export default class Server {
     }
   }
 
+  async connectToDatabase(databaseServices) {
+    try {
+      databaseServices.forEach(async (service) => {
+        await service.connect();
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   run() {
     return this.#app.listen(this.#port, () => {
       console.log(`${logs.listening(this.#port)}`);

@@ -1,4 +1,4 @@
-import { logger } from "./Logger.js";
+import { logger } from "../services/Logger.js";
 
 class ErrorHandler {
   async handleError(err) {

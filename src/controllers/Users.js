@@ -1,4 +1,5 @@
 import _Controller from "../lib/Controller.js";
+import { authHandler } from "../middleware/index.js";
 
 export default class UserController extends _Controller {
   path = "/api";
@@ -7,7 +8,7 @@ export default class UserController extends _Controller {
       path: "/users",
       method: "GET",
       handler: this.getUsers,
-      localMiddleware: [],
+      localMiddleware: [authHandler],
     },
     {
       path: "/user",
